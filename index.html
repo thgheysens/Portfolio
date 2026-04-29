@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Théo Gheysens</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="nav-bloc">
+      <a href="#accueil" class="logo">Théo Gheysens</a>
+      <button class="burger" aria-label="Menu">&#9776;</button>
+      <ul class="menu">
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#projet">Projet Pro</a></li>
+        <li><a href="#activites">Activités</a></li>
+        <li><a href="#cv">CV</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="accueil" class="hero">
+    <div class="hero-bloc">
+      <img src="CV/photoCV.jpg" alt="Photo de Théo Gheysens" class="photo">
+      <h1>Théo Gheysens</h1>
+      <p class="slogan">Étudiant en Technologies de l'Informatique - EPHEC</p>
+      <a href="#projet" class="btn">Découvrir mon parcours</a>
+    </div>
+  </section>
+
+  <section id="projet" class="section">
+    <div class="container">
+      <h2 class="titre">Mon Projet Professionnel</h2>
+      <div class="intro">
+        <p>
+          Arrivé en fin de BAC3, je n'ai pas encore figé un objectif professionnel précis, mais mon parcours et mes expériences m'ont progressivement aidé à identifier les domaines qui me correspondent le mieux.
+          Je me vois tout à fait évoluer dans le développement web.
+        </p>
+        <p>
+          Cela dit, si je devais choisir la voie qui m'attire réellement, ce serait celle du développement embarqué et des systèmes liés à l'électronique.
+          Programmer une puce, un microcontrôleur ou un objet connecté, et voir le code se traduire par une action physique concrète, une LED qui s'allume, un moteur qui tourne, un capteur qui réagit et à plus grande échelle, un bras articulé ou une voiture sortir d'un labyrinthe.
+        </p>
+      </div>
+
+      <div class="deux-cards">
+        <div class="card">
+          <h3>Mes Points Forts</h3>
+          <ul>
+            <li>À l'aise en public et sociable</li>
+            <li>Gestion d'équipe et travail en environnement international</li>
+            <li>Gestion du stress</li>
+            <li>Flexible, adaptable et débrouillard</li>
+            <li>Empathie et serviable</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Mes Points Faibles</h3>
+          <ul>
+            <li>Mauvaise gestion du temps</li>
+            <li>Procrastination</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="activites" class="section">
+    <div class="container">
+      <h2 class="titre">Activités d'Acquisition de Compétences</h2>
+
+      <div class="activite" id="theme1">
+        <div class="bandeau" onclick="toggleTheme('theme1')">
+          <div>
+            <h3>CyberSecurity Challenge Belgium</h3>
+            <span class="type">Capture The Flag (CTF)</span>
+          </div>
+          <div class="meta">
+            <span class="heures">10h</span>
+            <span class="plus">+</span>
+          </div>
+        </div>
+        <div class="contenu">
+          <h4>Activités réalisées</h4>
+          <p>
+            Participation au CyberSecurity Challenge Belgium, une compétition nationale de cybersécurité de type Capture The Flag (CTF) d'une durée de 24h.
+            J'y ai participé avec 3 camarades de classe.
+            Nous avons résolu plusieurs challenges, qui nous ont fait terminer à la 156e place avec un score de 850 points.
+          </p>
+
+          <h4>Analyse réflexive</h4>
+          <p>
+            Le format 24h était intense : il a fallu se répartir les challenges et accepter de rester bloqué longtemps sans abandonner. J'ai découvert de nouveaux outils et compris qu'en cybersécurité, savoir chercher l'info compte autant que la technique. Cette expérience m'a fait découvrir des situations où il faut tester, se tromper et recommencer, une logique utile en développement comme en embarqué.
+          </p>
+
+          <h4>Preuve de participation</h4>
+          <div class="preuve">
+            <img src="preuves/cyberSecurityChallenge/Capture d'écran 2024-03-09 153941.png" alt="CyberSecurity Challenge Belgium - Équipe Les Zigotos et challenges résolus">
+            <img src="preuves/cyberSecurityChallenge/Capture d'écran 2024-03-09 154936.png" alt="CyberSecurity Challenge Belgium - Classement 156e place avec 850 points">
+          </div>
+        </div>
+      </div>
+
+      <div class="activite" id="theme2">
+        <div class="bandeau" onclick="toggleTheme('theme2')">
+          <div>
+            <h3>Job étudiant - Serveur &amp; Barman</h3>
+            <span class="type">Expérience professionnelle</span>
+          </div>
+          <div class="meta">
+            <span class="heures">10h</span>
+            <span class="plus">+</span>
+          </div>
+        </div>
+        <div class="contenu">
+          <h4>Activités réalisées</h4>
+          <p>
+            Depuis novembre 2023, je travaille en tant que serveur et barman au Restaurant Les Charmettes (Groupe Moresto), à raison de 7 à 12 heures minimum par week-end.
+            Mes tâches incluent le service en salle, la gestion des commandes au bar, l'accueil et le conseil des clients.
+            Cette expérience m'a permis de développer des compétences en gestion du stress, travail en équipe, communication et organisation dans un environnement exigeant et dynamique.
+          </p>
+
+          <h4>Analyse réflexive</h4>
+          <p>
+            Ce travail comme serveur et barman aux Charmettes depuis novembre 2023, chaque week-end, n'est pas lié à l'informatique, mais c'est l'expérience qui m'a le plus fait grandir humainement. Entre services saturés, clients exigeants et imprévus, j'ai appris à prioriser sous stress, communiquer clairement et garder mon calme. Je retrouve ces réflexes quand un bug bloque un projet à la veille d'une deadline. Pour mon futur métier, je sais que je serai à l'aise dans des environnements exigeants et en équipe.
+          </p>
+
+          <h4>Preuve de participation</h4>
+          <div class="preuve">
+            <img src="preuves/StudentsJob/fichePaye.jpg" alt="Fiche de paie - Restaurant Les Charmettes (Groupe Moresto)">
+          </div>
+        </div>
+      </div>
+
+      <div class="activite" id="theme3">
+        <div class="bandeau" onclick="toggleTheme('theme3')">
+          <div>
+            <h3>Reply Code Challenge 2024</h3>
+            <span class="type">Challenge de programmation</span>
+          </div>
+          <div class="meta">
+            <span class="heures">4h</span>
+            <span class="plus">+</span>
+          </div>
+        </div>
+        <div class="contenu">
+          <h4>Activités réalisées</h4>
+          <p>
+            Participation au Reply Code Challenge, le 21 mars 2024 de 16h30 à 20h00.
+            J'ai réalisé ce challenge avec un ami qui devait le présenter dans le cadre d'un de ses cours. C'était une très chouette expérience, avec une ambiance conviviale, ses professeurs ont offert les pizzas à tous les participants sur place.
+            Le challenge consistait à résoudre un problème algorithmique, un problème de pathfinding sur une grille avec des points d'or et d'argent, que nous avons abordé en Python.
+          </p>
+
+          <h4>Analyse réflexive</h4>
+          <p>
+            J'ai participé au Reply Code Challenge 2024 en binôme avec un ami, sur un problème de pathfinding résolu en Python. En 3h30, j'ai compris que la réflexion algorithmique en amont fait gagner bien plus de temps que de coder directement. L'ambiance conviviale sur place m'a donné envie de retenter ce genre de compétition pour progresser en algorithmique, une compétence utile autant en web qu'en embarqué.
+          </p>
+
+          <h4>Preuve de participation</h4>
+          <div class="preuve">
+            <img src="preuves/ReplyChallenges/Capture d'écran 2026-04-17 000641.png" alt="Reply Challenges - Email d'inscription">
+            <img src="preuves/ReplyChallenges/Capture d'écran 2026-04-17 000700.png" alt="Reply Challenges - Agenda du jour du challenge">
+            <img src="preuves/ReplyChallenges/Capture d'écran 2026-04-17 000718.png" alt="Reply Challenges - Email de fin de participation">
+          </div>
+        </div>
+      </div>
+
+      <div class="activite" id="theme4">
+        <div class="bandeau" onclick="toggleTheme('theme4')">
+          <div>
+            <h3>Site web de l'ASBL Patka</h3>
+            <span class="type">Développement web</span>
+          </div>
+          <div class="meta">
+            <span class="heures">10h</span>
+            <span class="plus">+</span>
+          </div>
+        </div>
+        <div class="contenu">
+          <h4>Activités réalisées</h4>
+          <p>
+            Réalisation d'un site web de présentation pour une ASBL dont je suis membre, Patka.
+            J'ai conçu et développé l'intégralité du site (structure HTML, mise en page CSS, contenus), puis déployé le site en ligne via Vercel.
+          </p>
+
+          <h4>Analyse réflexive</h4>
+          <p>
+            Ce projet m'a permis de mettre en pratique mes compétences en développement web sur un besoin concret et utile à l'ASBL. Au-delà de la technique, j'ai dû réfléchir à l'expérience utilisateur : quelles informations mettre en avant, comment rendre le site clair pour des visiteurs non techniques. La mise en ligne via Vercel et la gestion du dépôt GitHub m'ont aussi familiarisé avec les outils réels d'un développeur web.
+          </p>
+
+          <h4>Preuve de participation</h4>
+          <div class="preuve">
+            <p>
+              Site en ligne : <a href="https://patka.vercel.app/index.html" target="_blank" rel="noopener">https://patka.vercel.app/index.html</a><br>
+              Code source : <a href="https://github.com/thgheysens/Patka" target="_blank" rel="noopener">https://github.com/thgheysens/Patka</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="activite" id="theme5">
+        <div class="bandeau" onclick="toggleTheme('theme5')">
+          <div>
+            <h3>Formation KNX ETS eCampus</h3>
+            <span class="type">Formation certifiante - Domotique</span>
+          </div>
+          <div class="meta">
+            <span class="heures">10h</span>
+            <span class="plus">+</span>
+          </div>
+        </div>
+        <div class="contenu">
+          <h4>Activités réalisées</h4>
+          <p>
+            Formation en ligne ETS eCampus dispensée par la KNX Association, certifiée le 23 avril 2026.
+            KNX est un standard mondial pour les solutions de smart home et smart building.
+            La formation m'a permis de découvrir le protocole KNX, la topologie d'une installation, le paramétrage d'appareils et la prise en main du logiciel ETS utilisé par les intégrateurs pour configurer et mettre en service une installation domotique.
+          </p>
+
+          <h4>Analyse réflexive</h4>
+          <p>
+            J'ai suivi cette formation par intérêt personnel pour la domotique et les systèmes embarqués, un domaine qui rejoint directement mon projet professionnel. Au-delà de l'aspect théorique, j'ai apprécié de comprendre comment des composants physiques s'intègrent dans une logique de programmation et de configuration. Cette formation renforce ma conviction que je veux évoluer vers les systèmes connectés et embarqués.
+          </p>
+
+          <h4>Preuve de participation</h4>
+          <div class="preuve">
+            <img src="preuves/FormationETS/Capture d'écran 2026-04-23 190355.png" alt="Formation KNX ETS eCampus - Progression de la formation">
+            <p>
+              Certificat officiel KNX Association (note : 87%) :
+              <a href="preuves/FormationETS/Certificat.pdf" target="_blank" rel="noopener">Voir le certificat (PDF)</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="activite" id="theme6">
+        <div class="bandeau" onclick="toggleTheme('theme6')">
+          <div>
+            <h3>Mini-jeu Arduino "Retrobox"</h3>
+            <span class="type">Projet personnel - Système embarqué</span>
+          </div>
+          <div class="meta">
+            <span class="heures">6h</span>
+            <span class="plus">+</span>
+          </div>
+        </div>
+        <div class="contenu">
+          <h4>Activités réalisées</h4>
+          <p>
+            Conception et développement d'une mini console de jeux rétro sur Arduino, baptisée "Retrobox". Le projet intègre un écran LCD I2C 16x2, un joystick analogique, une télécommande infrarouge, une série de LEDs et de boutons poussoirs, ainsi que la sauvegarde des scores en EEPROM.
+            J'ai programmé en C/C++ (Arduino) un menu de sélection permettant de lancer quatre mini-jeux : Higher/Lower, Morse Trainer, Rhythm Tap et Lucky Dice.
+            Le code source est hébergé sur GitHub, ce qui m'a permis de versionner le projet et de documenter mon travail.
+          </p>
+
+          <h4>Analyse réflexive</h4>
+          <p>
+            Ce projet rejoint directement mon intérêt pour le développement embarqué : voir mon code se traduire par une action physique (LEDs qui s'allument, affichage LCD, lecture de signaux IR) est exactement ce qui me motive dans ce domaine.
+            Cela m'a appris à raisonner en termes de ressources limitées et à structurer un programme autour d'une boucle principale réactive aux entrées utilisateur.
+            Cette expérience renforce ma volonté de m'orienter vers les systèmes embarqués et l'IoT après mon BAC3.
+          </p>
+
+          <h4>Preuve de participation</h4>
+          <div class="preuve">
+            <video controls>
+              <source src="preuves/miniGame/81786eb5-e220-46ef-822c-752e55cfa08a.mp4" type="video/mp4">
+              Votre navigateur ne supporte pas la lecture vidéo.
+            </video>
+            <p>
+              Code source (Arduino) : <a href="preuves/miniGame/retrobox/retrobox.ino" target="_blank" rel="noopener">retrobox.ino</a><br>
+              Dépôt GitHub : <a href="https://github.com/thgheysens/mini-jeu/tree/main" target="_blank" rel="noopener">https://github.com/thgheysens/mini-jeu</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="activite" id="theme7">
+        <div class="bandeau" onclick="toggleTheme('theme7')">
+          <div>
+            <h3>Formation AI Fundamentals - IBM SkillsBuild</h3>
+            <span class="type">Formation certifiante - Intelligence Artificielle</span>
+          </div>
+          <div class="meta">
+            <span class="heures">10h</span>
+            <span class="plus">+</span>
+          </div>
+        </div>
+        <div class="contenu">
+          <h4>Activités réalisées</h4>
+          <p>
+            Formation en ligne "AI Fundamentals with IBM SkillsBuild" dispensée par IBM via le programme Cisco Networking Academy, certifiée le 28 avril 2026.
+            Cette formation couvre les bases de l'intelligence artificielle : machine learning, deep learning, traitement du langage naturel (NLP) et vision par ordinateur.
+            Elle inclut également une prise en main pratique de la plateforme IBM Watson Studio, permettant d'expérimenter concrètement avec des modèles d'IA.
+          </p>
+
+          <h4>Analyse réflexive</h4>
+          <p>
+            J'ai suivi cette formation pour comprendre les bases de l'IA, un domaine qui transforme aujourd'hui tous les secteurs de l'informatique. Au-delà des concepts théoriques, cette formation me donne une base solide pour comprendre où et comment intégrer de l'IA dans mes futurs projets, qu'il s'agisse d'analyse de données pour une application web ou de détection d'anomalies dans un système embarqué. C'est aussi une certification valorisable côté employeurs, dans un domaine où la demande explose.
+          </p>
+
+          <h4>Preuve de participation</h4>
+          <div class="preuve">
+            <img src="preuves/FormationAI/Capture d'écran 2026-04-28 193521.png" alt="Formation AI Fundamentals - Badge et Certificat IBM SkillsBuild">
+            <img src="preuves/FormationAI/Capture d'écran 2026-04-28 193556.png" alt="Formation AI Fundamentals - Détail du certificat (10h, IBM SkillsBuild)">
+            <p>
+              Certificat officiel IBM SkillsBuild :
+              <a href="preuves/FormationAI/AI_Fundamentals_with_IBM_SkillsBuild_certificate_theogheysens27-gmail-com_569849ac-8c89-4fea-8e67-58d4fc7584d6.pdf" target="_blank" rel="noopener">Voir le certificat (PDF)</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="cv" class="section gris">
+    <div class="container">
+      <h2 class="titre">Mon CV</h2>
+      <div class="cv-bloc">
+        <div class="cv-texte">
+          <div class="cv-partie">
+            <h3>Formation</h3>
+            <div class="cv-ligne">
+              <div class="date">2025-2026</div>
+              <div class="detail">
+                <strong>BAC3 Technologies de l'Informatique (Erasmus)</strong>
+                <p>EPHEC, Louvain-la-Neuve &mdash; 1er quadrimestre à l'USN (University of South-Eastern Norway), Kongsberg</p>
+              </div>
+            </div>
+            <div class="cv-ligne">
+              <div class="date">2024-2025</div>
+              <div class="detail">
+                <strong>BAC2 Technologies de l'Informatique</strong>
+                <p>EPHEC, Louvain-la-Neuve</p>
+              </div>
+            </div>
+            <div class="cv-ligne">
+              <div class="date">2023-2024</div>
+              <div class="detail">
+                <strong>BAC1 Technologies de l'Informatique</strong>
+                <p>EPHEC, Louvain-la-Neuve</p>
+              </div>
+            </div>
+            <div class="cv-ligne">
+              <div class="date">Mars 2025</div>
+              <div class="detail">
+                <strong>Projet "Rubik's Cube Solver"</strong>
+                <p>University of Ho Chi Minh City, Vietnam &mdash; Département IT</p>
+              </div>
+            </div>
+            <div class="cv-ligne">
+              <div class="date">2021-2023</div>
+              <div class="detail">
+                <strong>Ingénieur Civil (1ère année)</strong>
+                <p>Université Catholique de Louvain-la-Neuve</p>
+              </div>
+            </div>
+            <div class="cv-ligne">
+              <div class="date">2006-2021</div>
+              <div class="detail">
+                <strong>Enseignement secondaire</strong>
+                <p>Collège Sainte-Marie, Mouscron</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cv-partie">
+            <h3>Expérience</h3>
+            <div class="cv-ligne">
+              <div class="date">Août 2025 - Jan. 2026</div>
+              <div class="detail">
+                <strong>Erasmus &mdash; USN Kongsberg (Norvège)</strong>
+                <p>Premier quadrimestre de BAC3 effectué à l'University of South-Eastern Norway. Cours en anglais, travaux de groupe avec des étudiants internationaux et immersion complète dans un environnement académique étranger.</p>
+              </div>
+            </div>
+            <div class="cv-ligne">
+              <div class="date">Mars 2025</div>
+              <div class="detail">
+                <strong>Séjour académique au Vietnam (2 semaines)</strong>
+                <p>University of Ho Chi Minh City, département IT &mdash; Participation au projet "Rubik's Cube Solver" avec des étudiants locaux. Échange interculturel, travail en équipe internationale et découverte de nouvelles méthodes d'apprentissage.</p>
+              </div>
+            </div>
+            <div class="cv-ligne">
+              <div class="date">Nov. 2023 - Présent</div>
+              <div class="detail">
+                <strong>Serveur &amp; Barman</strong>
+                <p>Restaurant Les Charmettes &mdash; Groupe Moresto. Service en salle et gestion des commandes au bar.</p>
+              </div>
+            </div>
+            <div class="cv-ligne">
+              <div class="date">Juillet 2023</div>
+              <div class="detail">
+                <strong>Serveur</strong>
+                <p>Au B&oelig;uf by Greg et Steph. Service en salle.</p>
+              </div>
+            </div>
+            <div class="cv-ligne">
+              <div class="date">2021-2023</div>
+              <div class="detail">
+                <strong>Bénévole</strong>
+                <p>Serveur et barman lors d'évènements (Nuit du Compas, Pi Bars, etc.)</p>
+              </div>
+            </div>
+            <div class="cv-ligne">
+              <div class="date">2019-2021</div>
+              <div class="detail">
+                <strong>Responsable Scout</strong>
+                <p>1ère Unité de Mouscron &mdash; Animation de jeunes, organisation de camps, responsable d'un groupe d'une quarantaine d'enfants.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cv-partie">
+            <h3>Soft Skills</h3>
+            <div class="skills">
+              <span class="skill">À l'aise en public</span>
+              <span class="skill">Gestion d'équipe</span>
+              <span class="skill">Gestion du stress</span>
+              <span class="skill">Travail en environnement international</span>
+              <span class="skill">Flexible et adaptable</span>
+              <span class="skill">Empathie</span>
+            </div>
+          </div>
+
+          <div class="cv-partie">
+            <h3>Langues</h3>
+            <div class="cv-ligne">
+              <div class="detail">
+                <p><strong>Français</strong> &mdash; Langue maternelle</p>
+                <p><strong>Anglais</strong> &mdash; C1</p>
+                <p><strong>Néerlandais</strong> &mdash; A2/B1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cv-boutons">
+          <a href="CV/CVThéoGheysensFR.docx" class="btn" download>Télécharger mon CV (FR)</a>
+          <a href="CV/CVThéoGheysensEng.docx" class="btn btn-vide" download>Download my CV (EN)</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 class="titre">Contact</h2>
+      <div class="contacts">
+        <a href="mailto:theogheysens27@gmail.com" class="contact">
+          <span class="icone">&#9993;</span>
+          <span>theogheysens27@gmail.com</span>
+        </a>
+        <a href="tel:+32472713606" class="contact">
+          <span class="icone">&#9742;</span>
+          <span>+32 472 71 36 06</span>
+        </a>
+        <a href="https://www.linkedin.com/in/th%C3%A9o-gheysens-3160a3387/" target="_blank" class="contact">
+          <span class="icone">in</span>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Théo Gheysens - Portfolio EPHEC BAC3 TI</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
